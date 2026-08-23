@@ -31,7 +31,10 @@ jobs:
   build-push:
     needs: [ code-lint ]
     runs-on: ubuntu-latest
-    steps: 
+    steps:
+      - name: Clone the code
+        uses: actions/checkout@v7
+        
       - name: Login in to Docker hub
         uses: docker/login-action@v4
         with:
