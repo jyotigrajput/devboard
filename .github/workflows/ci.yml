@@ -1,4 +1,4 @@
-#Goal : Build devboard frontend docker image and push to Docker Hub
+#Goal : Build devboard frontend docker image and push to Docker Hub 
 
 name: Continous-Integration
 
