@@ -1,0 +1,29 @@
+#Goal : Build devboard frontend docker image and push to Docker Hub
+
+name: Continous-Integration
+
+on:
+  push:
+   branches: [master]
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the code
+        uses: actions\checkout@v7
+
+        
+      - name: Login in to Docker hub
+        uses: docker/login-actions@v4
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          
+  
+         
+
+   
+
+  
+  
