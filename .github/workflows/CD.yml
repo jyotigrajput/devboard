@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Code checkout
-        uses: action/checkout@v7
+        uses: actions/checkout@v7
 
       - name : Copy example env to main env
         run: cp .env.example .env
