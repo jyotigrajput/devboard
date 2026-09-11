@@ -3,10 +3,10 @@
 name: CI-matrix
 
 on:
-  workflow_dispatch:
-
+  push:
+    branches: [advanced]
+    
 jobs:
-
   frontend:
     runs-on: ubuntu-latest
     steps:
