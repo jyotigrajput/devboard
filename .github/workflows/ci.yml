@@ -4,8 +4,11 @@ name: Continous-Integration
 
 on:
   push:
-   branches: [master]
-
+    paths:
+        - '**'
+        - '!.github/workflows/**'
+    branches: [master]
+     
 jobs:
   code-lint:
     runs-on: ubuntu-latest
